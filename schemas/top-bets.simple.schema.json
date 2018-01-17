@@ -1,0 +1,197 @@
+[
+  {
+    "id": "272",
+    "name": "Settings",
+    "fields": [
+      {
+        "name": "topBets.markets",
+        "title": "Markets",
+        "default": [
+          
+        ],
+        "hidden": false,
+        "props": {
+          "items": [
+            {
+              "value": "match_result",
+              "label": "Match Result",
+              "id": "match_result"
+            },
+            {
+              "value": "half_match_result",
+              "label": "Half Match Result",
+              "id": "half_match_result"
+            },
+            {
+              "value": "under_over",
+              "label": "Under / Over",
+              "id": "under_over"
+            },
+            {
+              "value": "first_goal",
+              "label": "First Goal",
+              "id": "first_goal"
+            },
+            {
+              "value": "correct_score",
+              "label": "Correct Score",
+              "id": "correct_score"
+            }
+          ],
+          "switchBtn": false,
+          "validationRules": [
+            "required"
+          ]
+        },
+        "widget": "checkBox",
+        "markAsRequired": true
+      },
+      {
+        "name": "topBets.order",
+        "title": "Order",
+        "default": "most_bets",
+        "hidden": false,
+        "props": {
+          "items": [
+            {
+              "value": "most_bets",
+              "label": "Most Number of Bets"
+            },
+            {
+              "value": "most_money",
+              "label": "Most Money on Bet"
+            },
+            {
+              "value": "odds",
+              "label": "Best Odds"
+            }
+          ],
+          "validationRules": [
+            "required"
+          ]
+        },
+        "widget": "select",
+        "markAsRequired": true
+      },
+      {
+        "name": "topBets.numberOfMarkets",
+        "title": "Number of markets",
+        "default": "5",
+        "hidden": false,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      },
+      {
+        "name": "version",
+        "title": "",
+        "default": "%asset_name%",
+        "hidden": true,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      }
+    ],
+    "hidden": false
+  },
+  {
+    "id": "278",
+    "name": "Display Options",
+    "fields": [
+      {
+        "name": "topBets.title",
+        "title": "Title",
+        "default": "",
+        "hidden": false,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      },
+      {
+        "name": "topBets.subtitle",
+        "title": "Subtitle",
+        "default": "",
+        "hidden": false,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      },
+      {
+        "name": "topBets.backgroundColor",
+        "title": "Background colour",
+        "default": "",
+        "hidden": false,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "colorPicker",
+        "markAsRequired": false
+      },
+      {
+        "name": "topBets.textColor",
+        "title": "Text colour",
+        "default": "",
+        "hidden": false,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "colorPicker",
+        "markAsRequired": false
+      },
+      {
+        "name": "topBets.buttonText",
+        "title": "Button text",
+        "default": "",
+        "hidden": false,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      }
+    ],
+    "hidden": false
+  },
+  {
+    "id": "284",
+    "name": "Hidden fields",
+    "fields": [
+      {
+        "name": "parentId",
+        "title": "",
+        "default": "",
+        "hidden": true,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      }
+    ],
+    "hidden": true
+  }
+]

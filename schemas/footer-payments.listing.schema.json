@@ -1,0 +1,179 @@
+[
+  {
+    "id": "2513",
+    "name": "Listing",
+    "fields": [
+      {
+        "name": "payments.Json",
+        "title": "",
+        "default": [
+          
+        ],
+        "hidden": false,
+        "props": {
+          "widgets": {
+            
+          },
+          "draggable": true,
+          "schema": [
+            {
+              "id": "2520",
+              "name": "Settings",
+              "fields": [
+                {
+                  "name": "image.title",
+                  "title": "Payment Title",
+                  "default": "",
+                  "hidden": false,
+                  "props": {
+                    "validationRules": [
+                      
+                    ]
+                  },
+                  "widget": "textField",
+                  "markAsRequired": false
+                },
+                {
+                  "name": "image.src_related",
+                  "title": "Image",
+                  "default": "",
+                  "hidden": false,
+                  "props": {
+                    "displayedImagesNum": 16,
+                    "labels": {
+                      "browsing": "Browse Image",
+                      "adding": "Upload Image",
+                      "formInput": "Add Image"
+                    },
+                    "validationRules": [
+                      
+                    ]
+                  },
+                  "widget": "imageLibrary",
+                  "markAsRequired": false
+                },
+                {
+                  "name": "image.alt",
+                  "title": "Alt",
+                  "default": "",
+                  "hidden": false,
+                  "props": {
+                    "validationRules": [
+                      
+                    ]
+                  },
+                  "widget": "textField",
+                  "markAsRequired": false
+                },
+                {
+                  "name": "link.url",
+                  "title": "URL",
+                  "default": "",
+                  "hidden": false,
+                  "props": {
+                    "validationRules": [
+                      "url"
+                    ]
+                  },
+                  "widget": "textField",
+                  "markAsRequired": false
+                },
+                {
+                  "name": "link.target",
+                  "title": "Target",
+                  "default": "_self",
+                  "hidden": false,
+                  "props": {
+                    "items": [
+                      {
+                        "value": "_self",
+                        "label": "_self"
+                      },
+                      {
+                        "value": "_blank",
+                        "label": "_blank"
+                      },
+                      {
+                        "value": "_parent",
+                        "label": "_parent"
+                      },
+                      {
+                        "value": "_top",
+                        "label": "_top"
+                      }
+                    ],
+                    "validationRules": [
+                      
+                    ]
+                  },
+                  "widget": "select",
+                  "markAsRequired": false
+                }
+              ],
+              "hidden": false
+            },
+            {
+              "id": "2525",
+              "name": "Hidden fields",
+              "fields": [
+                {
+                  "name": "config.description",
+                  "title": "description",
+                  "default": "image.title",
+                  "hidden": true,
+                  "props": {
+                    "validationRules": [
+                      
+                    ]
+                  },
+                  "widget": "textField",
+                  "markAsRequired": false
+                }
+              ],
+              "hidden": true
+            }
+          ],
+          "validationRules": [
+            "required"
+          ]
+        },
+        "widget": "listing",
+        "markAsRequired": true
+      },
+      {
+        "name": "version",
+        "title": "",
+        "default": "%asset_assetid^md5%",
+        "hidden": true,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      }
+    ],
+    "hidden": false
+  },
+  {
+    "id": "2516",
+    "name": "Hidden fields",
+    "fields": [
+      {
+        "name": "parentId",
+        "title": "",
+        "default": "",
+        "hidden": true,
+        "props": {
+          "validationRules": [
+            
+          ]
+        },
+        "widget": "textField",
+        "markAsRequired": false
+      }
+    ],
+    "hidden": true
+  }
+]
