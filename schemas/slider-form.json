@@ -1,0 +1,140 @@
+{
+	"id": "2583",
+	"name": "Slider",
+	"fields": [{
+			"name": "name",
+			"title": "Name",
+			"default": "",
+			"hidden": false,
+			"props": {
+				"maxLength": "140",
+				"validationRules": [
+					"required"
+				]
+			},
+			"widget": "textField",
+			"markAsRequired": true
+		},
+		{
+			"name": "itemsNumber",
+			"title": "Select Number of content items",
+			"default": 4,
+			"hidden": false,
+			"props": {
+				"minimum": 1,
+				"maximum": 8,
+				"validationRules": [
+					"required"
+				]
+			},
+			"widget": "integerField",
+			"markAsRequired": true
+		},
+		{
+			"name": "displayDurtaion",
+			"title": "Select duration",
+			"default": 4,
+			"hidden": false,
+			"props": {
+				"minimum": 5,
+				"maximum": 30,
+				"validationRules": [
+					"required"
+				]
+			},
+			"widget": "integerField",
+			"markAsRequired": true
+		},
+		{
+			"name": "type",
+			"title": "Type",
+			"default": "unscheduledList",
+			"hidden": true,
+			"props": {
+				"validationRules": [
+					"required"
+				]
+			},
+			"widget": "textField",
+			"markAsRequired": true
+		},
+		{
+			"name": "items",
+			"title": "Slides",
+			"default": [],
+			"hidden": false,
+			"props": {
+				"widgets": {},
+				"draggable": true,
+				"schema": [{
+					"name": "items",
+					"title": "Items",
+					"default": [],
+					"hidden": false,
+					"props": {
+						"widgets": {},
+						"draggable": true,
+						"schema": [{
+							"name": "Item link",
+							"title": "Scheduled item",
+							"default": [],
+							"hidden": false,
+							"props": {
+								"widgets": {},
+								"draggable": false
+							},
+							"fields": [{
+									"name": "itemId",
+									"title": "ItemId",
+									"default": "",
+									"hidden": false,
+									"props": {
+										"validationRules": [
+											"required"
+										]
+									},
+									"widget": "textField",
+									"markAsRequired": true
+								},
+								{
+									"name": "schedule",
+									"title": "Schedule item displaying",
+									"default": "",
+									"hidden": false,
+									"props": {
+										"validationRules": [
+											"required"
+										]
+									},
+									"widget": "textField",
+									"markAsRequired": true
+								}, {
+									"name": "itemType",
+									"title": "Schedule item displaying",
+									"default": "",
+									"hidden": false,
+									"props": {
+										"validationRules": [
+											"required"
+										]
+									},
+									"widget": "textField",
+									"markAsRequired": true
+								}
+							]
+						}],
+						"hidden": false
+					},
+					"widget": "scheduledListing",
+					"markAsRequired": false
+				}],
+				"validationRules": [
+					"required"
+				]
+			},
+			"widget": "listing",
+			"markAsRequired": false
+		}
+	],
+	"hidden": false
+}
