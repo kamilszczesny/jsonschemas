@@ -1,0 +1,18 @@
+{
+    "id": "2583",
+    "name": "TestItem",
+    "fields": [{
+        "name": "name",
+        "title": "Name",
+        "default": "",
+        "hidden": false,
+        "props": {
+            "maxLength": "140",
+            "validationRules": [
+                "required"
+            ]
+        },
+        "widget": "textField",
+        "markAsRequired": true
+    }]
+}

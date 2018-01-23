@@ -27,7 +27,7 @@
 					"required"
 				]
 			},
-			"widget": "integerField",
+			"widget": "textField",
 			"markAsRequired": true
 		},
 		{
@@ -42,7 +42,7 @@
 					"required"
 				]
 			},
-			"widget": "integerField",
+			"widget": "textField",
 			"markAsRequired": true
 		},
 		{
