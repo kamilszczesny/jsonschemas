@@ -1,0 +1,103 @@
+{
+    "dataSchema": {
+        "name": "Slider",
+        "version": "0.0.1"
+    },
+    "version": "0.0.1",
+    "sections": [{
+        "id": "2583",
+        "name": "Slider",
+        "hidden": false,
+        "fields": [{
+                "name": "name",
+                "title": "Name",
+                "default": "",
+                "fieldType": "text",
+                "hidden": false,
+                "validationRules": {
+                    "required": true
+                }
+            },
+            {
+                "name": "displayDuration",
+                "title": "Select duration",
+                "default": 4,
+                "fieldType": "text",
+                "hidden": false,
+                "validationRules": {
+                    "min": 2,
+                    "max": 30,
+                    "required": true,
+                    "integer": true
+                }
+            },
+            {
+                "name": "items",
+                "title": "Label Rotations",
+                "default": [],
+                "fieldType": "listing",
+                "hidden": false,
+                "draggable": true,
+                "validationRules": {
+                    "required": true
+                },
+                "schema": [{
+                    "id": "items",
+                    "name": "items",
+                    "fields": [{
+                        "name": "Items",
+                        "title": "Label Banners",
+                        "default": [],
+                        "fieldType": "listing",
+                        "draggable": true,
+                        "validationRules": {
+                            "required": true
+                        },
+                        "schema": {
+                            "name": "item",
+                            "title": "Item",
+                            "fileds": [{
+                                    "name": "itemId",
+                                    "title": "ItemId",
+                                    "default": "",
+                                    "fieldType": "text",
+                                    "hidden": false,
+                                    "validateUrl": false,
+                                    "validationRules": {
+                                        "required": true
+                                    }
+                                },
+                                {
+                                    "name": "schedule",
+                                    "default": "",
+                                    "fieldType": "scheduler",
+                                    "hidden": false,
+                                    "validationRules": {
+                                        "required": true
+                                    }
+                                },
+                                {
+                                    "name": "itemType",
+                                    "title": "type",
+                                    "default": "",
+                                    "fieldType": "select",
+                                    "multiple": false,
+                                    "hidden": false,
+                                    "options": {
+                                        "Banner": "banner",
+                                        "Html5Banner": "html5banner",
+                                        "Boczek": "odd"
+                                    },
+                                    "validationRules": {
+                                        "required": true
+                                    }
+                                }
+                            ]
+                        },
+                        "hidden": false
+                    }]
+                }]
+            }
+        ]
+    }]
+}
