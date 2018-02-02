@@ -12,9 +12,9 @@
                 "name": "name",
                 "title": "Name",
                 "default": "",
-                "fieldType": "text",
+                "type": "text",
                 "hidden": false,
-                "validationRules": {
+                "validation": {
                     "required": true
                 }
             },
@@ -22,9 +22,9 @@
                 "name": "displayDuration",
                 "title": "Select duration",
                 "default": 4,
-                "fieldType": "text",
+                "type": "text",
                 "hidden": false,
-                "validationRules": {
+                "validation": {
                     "min": 2,
                     "max": 30,
                     "required": true,
@@ -35,10 +35,10 @@
                 "name": "items",
                 "title": "Label Rotations",
                 "default": [],
-                "fieldType": "listing",
+                "type": "listing",
                 "hidden": false,
                 "draggable": true,
-                "validationRules": {
+                "validation": {
                     "required": true
                 },
                 "schema": [{
@@ -48,31 +48,31 @@
                         "name": "Items",
                         "title": "Label Banners",
                         "default": [],
-                        "fieldType": "listing",
+                        "type": "listing",
                         "draggable": true,
-                        "validationRules": {
+                        "validation": {
                             "required": true
                         },
-                        "schema": {
+                        "schema": [{
                             "name": "item",
                             "title": "Item",
-                            "fileds": [{
+                            "fields": [{
                                     "name": "itemId",
                                     "title": "ItemId",
                                     "default": "",
-                                    "fieldType": "text",
+                                    "type": "text",
                                     "hidden": false,
                                     "validateUrl": false,
-                                    "validationRules": {
+                                    "validation": {
                                         "required": true
                                     }
                                 },
                                 {
                                     "name": "schedule",
                                     "default": "",
-                                    "fieldType": "scheduler",
+                                    "type": "scheduler",
                                     "hidden": false,
-                                    "validationRules": {
+                                    "validation": {
                                         "required": true
                                     }
                                 },
@@ -80,7 +80,7 @@
                                     "name": "itemType",
                                     "title": "type",
                                     "default": "",
-                                    "fieldType": "select",
+                                    "type": "select",
                                     "multiple": false,
                                     "hidden": false,
                                     "options": {
@@ -88,12 +88,12 @@
                                         "Html5Banner": "html5banner",
                                         "Boczek": "odd"
                                     },
-                                    "validationRules": {
+                                    "validation": {
                                         "required": true
                                     }
                                 }
                             ]
-                        },
+                        }],
                         "hidden": false
                     }]
                 }]
